@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chamo69.github.io/sitemap.xml
