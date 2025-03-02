@@ -306,22 +306,24 @@
         <div class="input-group">
           <div class="input-box">
             <input type="hidden" name="access_key" value="ba2768ca-071d-44ab-b1fe-3ddcae5f4b96">
-            <input type="text" placeholder="Full Name" />
-            <input type="email" placeholder="Enter Your Email" />
+            <input type="text" name="name" placeholder="Full Name" class="contact-inputs" required/>
+            <input type="email" name="email" placeholder="Enter Your Email" class="contact-inputs" required/>
           </div>
           <div class="input-box">
-            <input type="number" placeholder="Phone Number" />
-            <input type="text" placeholder="Subject" />
+            <input type="number" name="number" placeholder="Phone Number" class="contact-inputs" required/>
+            <input type="text" name="suject" placeholder="Subject" class="contact-inputs" required/>
           </div>
         </div>
 
         <div class="input-group-2">
           <textarea
-            name=""
+            name="message"
             id=""
             cols="30"
             rows="10"
             placeholder="Your Message"
+            required
+            class="contact-inputs"
           ></textarea>
           <input type="submit" value="Send Message" class="btn" />
         </div>
@@ -353,6 +355,12 @@
         </li>
       </ul>
       <p class="copyright">© <script>document.write(new Date().getFullYear());</script> Chamodh Bhanuka | All Right Reserved</p>
+      <script>
+        window.onload = function() {
+            // Reset the form fields when the page loads
+            document.getElementById("form").reset();
+        };
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
