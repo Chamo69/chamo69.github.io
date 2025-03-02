@@ -49,3 +49,9 @@ window.addEventListener("scroll", highlightActiveSection);
 
 // Initial call to highlight the active section when the page loads
 document.addEventListener("DOMContentLoaded", highlightActiveSection);
+
+
+window.onload = function() {
+// Reset the form fields when the page loads
+  document.getElementById("form").reset();
+};
