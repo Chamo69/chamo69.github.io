@@ -38,7 +38,7 @@ function highlightActiveSection() {
       `heaader nav a[href="#${currentSection}"]`
     );
     if (activeLink) {
-      // console.log(activeLink);
+      
       activeLink.classList.add("active");
     }
   }
