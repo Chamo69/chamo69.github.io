@@ -18,20 +18,20 @@
     <meta name="googlebot" content="index, follow">
     <meta property="og:title" content="Chamodh Bhanuka | Portfolio">
     <meta property="og:description" content="A showcase of Web Development, Desktop Apps, IoT, and Database solutions.">
-    <meta property="og:image" content="my.jpg">
+    <meta property="og:image" content="Image/my.jpg">
     <meta property="og:image:alt" content="Chamodh Bhanuka">
     <meta property="og:url" content="https://chamo69.github.io/">
     <meta property="og:type" content="website">
     
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Style/style.css" />
     <link rel="manifest" href="/manifest.json"/>
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="Image/favicon-96x96.png">
     <!-- <link rel="icon" href="/favicon-32x32.png"/> -->
-    <link rel="icon" type="image/svg+xml" href="/mypic.svg"/>
+    <link rel="icon" type="image/svg+xml" href="Image/mypic.svg"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css">
 
 
-    <script src="scrollreveal.js"></script>
+    <script src="Script/scrollreveal.js"></script>
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NPGJ994HJB"></script>
@@ -97,6 +97,29 @@
   </head>
   <body>
 
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="spinner-box">
+        <div class="configure-border-1">  
+          <div class="configure-core"></div>
+        </div>  
+        <div class="configure-border-2">
+          <div class="configure-core"></div>
+        </div> 
+      </div>
+
+      <div id="load">
+        <div>E</div>
+        <div>M</div>
+        <div>O</div>
+        <div>C</div>
+        <div>L</div>
+        <div>E</div>
+        <div>W</div>
+      </div>
+    </div>
+
+
     <div id="content">
     <heaader class="header" >
       <a href="#home" class="logo">Mr. <span>Chamodh</span></a>
@@ -136,7 +159,7 @@
       </div>
 
       <div class="home-img">
-        <img src="my.jpg" alt="" />
+        <img src="Image/my.jpg" alt="" />
       </div>
     </section>
 
@@ -245,9 +268,9 @@
           <script>
             // Array of website details
             const websites = [
-              { name: "My Blog", img: "./my blog.png", url: "http://chamodh.free.nf/" },
-              { name: "File Sharing", img: "./file sharing.png", url: "https://chamo.pythonanywhere.com/" },
-              { name: "Blogspot", img: "./blogspot.png", url: "https://chamodhbhanuka.blogspot.com/" },
+              { name: "My Blog", img: "Image/my blog.png", url: "http://chamodh.free.nf/" },
+              { name: "File Sharing", img: "Image/file sharing.png", url: "https://chamo.pythonanywhere.com/" },
+              { name: "Blogspot", img: "Image/blogspot.png", url: "https://chamodhbhanuka.blogspot.com/" },
             ];
           
             // Generate and insert website items dynamically
@@ -276,15 +299,15 @@
           <script>
             // Array of skills with image paths
             const skills = [
-              { name: "HTML", img: "./html.png" },
-              { name: "CSS", img: "./css.png" },
-              { name: "JavaScript", img: "./js.png" },
-              { name: "Python", img: "./python.png" },
-              { name: "MySQL", img: "./mysql.png" },
-              { name: "C#", img: "./Csharp.png" },
-              { name: "Java", img: "./java.png" },
-              { name: ".NET", img: "./dotnet.png" },
-              { name: "PHP", img: "./php.png" },
+              { name: "HTML", img: "Image/html.png" },
+              { name: "CSS", img: "Image/css.png" },
+              { name: "JavaScript", img: "Image/js.png" },
+              { name: "Python", img: "Image/python.png" },
+              { name: "MySQL", img: "Image/mysql.png" },
+              { name: "C#", img: "Image/Csharp.png" },
+              { name: "Java", img: "Image/java.png" },
+              { name: ".NET", img: "Image/dotnet.png" },
+              { name: "PHP", img: "Image/php.png" },
             ];
           
             // Generate and insert skill items using map()
@@ -360,11 +383,11 @@
       <p class="copyright">© <script>document.write(new Date().getFullYear());</script> Chamodh Bhanuka | All Right Reserved</p>
     </div>
 
-    <script src="aos.js"></script>
+    <script src="Script/aos.js"></script>
     <script>
         AOS.init(); // Initialize AOS Animations
     </script>
 
-    <script src="script.js" defer></script>
+    <script src="Script/script.js" ></script>
   </body>
 </html>
