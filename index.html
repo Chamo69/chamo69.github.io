@@ -33,6 +33,7 @@
       rel="stylesheet"
     />
 
+    <script src="https://unpkg.com/scrollreveal"></script>
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NPGJ994HJB"></script>
@@ -43,6 +44,7 @@
 
       gtag('config', 'G-NPGJ994HJB');
     </script>
+
 
 
 
@@ -96,7 +98,32 @@
 
   </head>
   <body>
-    <heaader class="header">
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="spinner-box">
+        <div class="configure-border-1">  
+          <div class="configure-core"></div>
+        </div>  
+        <div class="configure-border-2">
+          <div class="configure-core"></div>
+        </div> 
+      </div>
+
+      <div id="load">
+        <div>E</div>
+        <div>M</div>
+        <div>O</div>
+        <div>C</div>
+        <div>L</div>
+        <div>E</div>
+        <div>W</div>
+      </div>
+    </div>
+
+
+    <div id="content" style="display: none;">
+    <heaader class="header" >
       <a href="#home" class="logo">Mr. <span>Chamodh</span></a>
 
       <i class="bx bx-menu" id="menu-icon"></i>
@@ -105,7 +132,7 @@
         <a href="#home">Home</a>
         <a href="#education">Education</a>
         <a href="#services">Services</a>
-        <a href="#websites">Websites</a>
+        <a href="#websites">Projects</a>
         <a href="#testimonials">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -113,9 +140,9 @@
 
     <section class="home" id="home">
       <div class="home-content">
-        <h1>Hi, I'm <span>Chamodh Bhanuka</span></h1>
+        <h1 class="me">Hi, I'm <span>Chamodh Bhanuka</span></h1>
         <h3 class="text-animation">I'm a <span></span></h3>
-        <p style="text-align: justify;">
+        <p style="text-align: justify;" class="home-desc">
           Welcome to my portfolio, an aspiring IT professional with a passion for technology and software development. I'm currently studying IT and have hands-on experience with Java, C#, Python, MySQL, web development, desktop applications, and IoT basics. <br>
           I enjoy exploring different areas of technology, from building websites to developing software solutions that solve real-world problems. I'm always eager to learn new skills, experiment with different technologies, and improve my knowledge in software engineering. <br>
           In addition to IT, I have a strong interest in animation and gaming, which fuel my creativity and problem-solving mindset. I believe that continuous learning and innovation are key to success in the tech industry. <br>
@@ -145,7 +172,7 @@
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-date">2024 - Present</div>
-          <div class="timeline-content">
+          <div class="timeline-content content1">
             <h3>IMBS Green Campus</h3>
             <p>
               DIPLOMA IN INFORMATION & COMMUNICATION TECHNOLOGY<br/>
@@ -157,7 +184,7 @@
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-date">2022</div>
-          <div class="timeline-content">
+          <div class="timeline-content content2">
             <h3>University of Moratuwa</h3>
             <p>
               Open Online Course - Trainee- Full Stack Developer<br> <br>
@@ -171,7 +198,7 @@
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-date">2024</div>
-          <div class="timeline-content">
+          <div class="timeline-content content3">
             <h3>IBS Campus</h3>
             <p>
               English Language Certificate Course<br/>
@@ -183,7 +210,7 @@
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-date">2022</div>
-          <div class="timeline-content">
+          <div class="timeline-content content4">
             <h3>Institute of Digital Engineering Technology</h3>
             <p>
               Java Industrial Expert Masterclass Course<br/>
@@ -238,7 +265,7 @@
 
     <section class="websites" id="websites">
       <div class="websites-box">
-        <h2 class="heading"><span>MY</span> Websites</h2>
+        <h2 class="heading"><span>MY</span> Projects</h2>
         <div class="websites-wrapper" id="websitesList">
           <script>
             // Array of website details
@@ -356,6 +383,13 @@
         </li>
       </ul>
       <p class="copyright">© <script>document.write(new Date().getFullYear());</script> Chamodh Bhanuka | All Right Reserved</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS Animations
+    </script>
+
     <script src="script.js"></script>
   </body>
 </html>

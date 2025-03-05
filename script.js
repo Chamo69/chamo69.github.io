@@ -55,3 +55,41 @@ window.onload = function() {
 // Reset the form fields when the page loads
   document.getElementById("form").reset();
 };
+
+// pre loader and scroll reveal
+
+window.addEventListener("load", function () {
+  let preloader = document.getElementById("preloader");
+  let content = document.getElementById("content");
+
+  setTimeout(() => {
+      preloader.style.transition = "opacity 1s ease-out";
+      preloader.style.opacity = "0"; // Fade-out effect
+
+      setTimeout(() => {
+          preloader.style.display = "none"; // Hide preloader
+          content.style.display = "block"; // Show main content
+
+          // 🛠️ Fix: Force reflow & reinitialize ScrollReveal animations
+          document.documentElement.style.overflowY = "auto"; // Enable scrolling
+
+          setTimeout(() => {
+              ScrollReveal().clean('*'); // Clear previous animations
+              ScrollReveal({ 
+                  reset: true,
+                  distance: '60px',
+                  duration: 2500,
+                  delay: 400
+              });
+
+              ScrollReveal().reveal('.home-desc, .me, .content1, .content3', { delay: 150, origin: 'left' });
+              ScrollReveal().reveal('.content2, .content4', { delay: 150, origin: 'right' });
+              ScrollReveal().reveal('.home-img, .heading', { delay: 150, scale: 0.80 });
+              ScrollReveal().reveal('.service-box', { delay: 150, scale: 0.50 });
+              ScrollReveal().reveal('.website-item', { delay: 150, scale: 0.50 });
+
+          }, 200); // Small delay to ensure animations reset properly
+      }, 1000); // Wait for fade-out
+  }, 3000); // Preloader duration
+});
+
