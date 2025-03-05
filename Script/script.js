@@ -88,5 +88,5 @@ window.onload = function () {
       ScrollReveal().reveal('.service-box', { delay: 200, scale: 0.50 });
       ScrollReveal().reveal('.website-item', { delay: 200, scale: 0.50 });
 
-  }, 4000); // Wait 6s (5s preloader + 1s fade out)
+  }, 3000); // Wait 6s (5s preloader + 1s fade out)
 };
