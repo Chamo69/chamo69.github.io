@@ -812,6 +812,7 @@ footer .social a {
   z-index: 9999;
   align-items: center;
   transition: opacity 1s ease-out;
+  overflow: hidden;
 }
 
 
