@@ -56,19 +56,19 @@ window.onload = function() {
   document.getElementById("form").reset();
 };
 
-document.addEventListener("DOMContentLoaded", function () {
-  let preloader = document.getElementById("preloader");
-  let content = document.getElementById("content");
+// document.addEventListener("DOMContentLoaded", function () {
+//   let preloader = document.getElementById("preloader");
+//   let content = document.getElementById("content");
 
-  setTimeout(() => {
-      preloader.style.opacity = "0"; // Fade-out effect
-      setTimeout(() => {
-          preloader.style.display = "none"; // Hide preloader
-          content.style.display = "block"; // Show main content
-          document.body.style.overflowY = "auto"; // Enable scrolling
-      }, 1000); // 1s after opacity 0
-  }, 3000); // 5s loading
-});
+//   setTimeout(() => {
+//       preloader.style.opacity = "0"; // Fade-out effect
+//       setTimeout(() => {
+//           preloader.style.display = "none"; // Hide preloader
+//           content.style.display = "block"; // Show main content
+//           document.body.style.overflowY = "auto"; // Enable scrolling
+//       }, 1000); // 1s after opacity 0
+//   }, 3000); // 5s loading
+// });
 
 window.onload = function () {
   // Fix: Wait until preloader finishes to trigger animations
@@ -88,5 +88,5 @@ window.onload = function () {
       ScrollReveal().reveal('.service-box', { delay: 200, scale: 0.50 });
       ScrollReveal().reveal('.website-item', { delay: 200, scale: 0.50 });
 
-  }, 4000); // Wait 6s (5s preloader + 1s fade out)
+  }); // Wait 6s (5s preloader + 1s fade out)
 };
